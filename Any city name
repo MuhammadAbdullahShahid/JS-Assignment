@@ -1,0 +1,17 @@
+//Enter any city name
+var city=prompt('enter')
+var upper=city.slice(0,1).toUpperCase()
+var lower=city.slice(1).toLowerCase()
+var conc=upper+lower
+var arr=["Karachi","Lahore","Quetta"]
+var flag=true
+for (let i = 0; i < arr.length; i++) {
+    if(conc==arr[i]){
+        document.write("found")
+        flag=false
+    }
+    
+}
+if(flag==true){
+    document.write("not found")
+}
